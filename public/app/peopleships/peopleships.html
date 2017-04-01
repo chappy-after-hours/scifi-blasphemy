@@ -1,0 +1,20 @@
+<button ng-click="mash()">Mash It!</button>
+
+<div class="result">
+	<div class="person">
+		<h3>
+			<a ui-sref="person({show: 'startrek', id: person.id})">
+				{{person.first_name}} {{person.last_name}}
+			</a>
+		</h3>
+		<div>
+			<img ng-src="{{person.image_url}}">
+		</div>
+	</div>
+	<div class="ship">
+		<h3>{{ship.name}}</h3>
+		<div>
+			<img ng-src="{{ship.image_url}}">
+		</div>
+	</div>
+</div>
